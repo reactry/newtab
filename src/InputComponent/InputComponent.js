@@ -2,7 +2,11 @@ import React from 'react';
 
 
 
-function InputComponent ({shortcuts, setShortcuts}) {
+function InputComponent ({
+		shortcuts, setShortcuts,
+		inputComponentHidden, setInputComponentHidden
+	}) {
+
 	let [shortcut, setShortcut] = React.useState({
 		name: "",
 		url: ""
@@ -34,12 +38,15 @@ function InputComponent ({shortcuts, setShortcuts}) {
 				name: "",
 				url: ""
 			});
+			setInputComponentHidden(true);
 		}
 		console.log(`Added shortcut: ${shortcut.name} (${shortcut.url})`);
 	}
 
+	let className = "InputComponent p-12 bg-slate-300";
+	if (inputComponentHidden) className += " hidden";
 	return (
-		<div className="InputComponent p-12 bg-slate-300">
+		<div className={className}>
 			<h2 className="text-2xl">Add a shortcut</h2>
 			<form className="py-4 space-y-4" onSubmit={handleSubmit}>
 				<div>

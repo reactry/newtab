@@ -10,8 +10,9 @@ import OutputComponent from './OutputComponent';
 
 function App () {
 	let [shortcuts, setShortcuts] = React.useState([]);
+	let [inputComponentHidden, setInputComponentHidden] = React.useState(false);
 
-	let attrs = {shortcuts, setShortcuts};
+	let attrs = {shortcuts, setShortcuts, inputComponentHidden, setInputComponentHidden};
 	return (
 		<div className="App">
 			<header className="App-header">
