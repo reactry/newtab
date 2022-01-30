@@ -1,0 +1,9 @@
+{
+	"backgrounds": [
+		{"name": "Blue", "className": "bg-blue-500"},
+		{"name": "Green", "className": "bg-green-500"},
+		{"name": "Grey", "className": "bg-grey-500"},
+		{"name": "Pink", "className": "bg-pink-500"},
+		{"name": "Red", "className": "bg-red-500"}
+	]
+}
