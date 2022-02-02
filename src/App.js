@@ -3,23 +3,27 @@ import './App.css';
 import React from 'react';
 
 import Header from './Header';
+import Main from './Main';
 import Footer from './Footer';
 
-import InputComponent from './InputComponent';
-import OutputComponent from './OutputComponent';
-
 function App () {
-	let [shortcuts, setShortcuts] = React.useState([]);
-	let [inputComponentHidden, setInputComponentHidden] = React.useState(false);
+	let [tabs, setTabs] = React.useState([]);
 
-	let attrs = {shortcuts, setShortcuts, inputComponentHidden, setInputComponentHidden};
+	let [showHeader, setShowHeader] = React.useState(true);
+	let [showFooter, setShowFooter] = React.useState(true);
+
+	let props = {
+		showHeader, setShowHeader,
+		showFooter, setShowFooter,
+		tabs, setTabs
+	};
+
 	return (
 		<div className="App">
 			<header className="App-header">
-				<Header />
-				<InputComponent {...attrs} />
-				<OutputComponent {...attrs} />
-				<Footer />
+				<Header showHeader={showHeader} />
+				<Main {...props} />
+				<Footer showFooter={showFooter} />
 			</header>
 		</div>
 	);
