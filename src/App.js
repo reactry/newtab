@@ -2,8 +2,8 @@ import './App.css';
 
 import React from 'react';
 
-import HeaderComponent from './HeaderComponent';
-import FooterComponent from './FooterComponent';
+import Header from './Header';
+import Footer from './Footer';
 
 import InputComponent from './InputComponent';
 import OutputComponent from './OutputComponent';
@@ -16,10 +16,10 @@ function App () {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<HeaderComponent />
+				<Header />
 				<InputComponent {...attrs} />
 				<OutputComponent {...attrs} />
-				<FooterComponent />
+				<Footer />
 			</header>
 		</div>
 	);
