@@ -13,11 +13,8 @@ export default function Tab ({
 	});
 
 	return (
-		<div className="Tab px-4 py-4">
-			<div>
-				<h2 className="px-2 py-2 font-bold">{title}</h2>
-			</div>
-			<div>
+		<div className="Tab px-4 py-12">
+			<div className="text-center">
 				{shortcutItems}
 			</div>
 		</div>
