@@ -13,7 +13,7 @@ export default function Tab ({
 	});
 
 	return (
-		<div className="Tab px-4 py-12">
+		<div className="Tab px-4 py-12 mb-32">
 			<div className="text-center">
 				{shortcutItems}
 			</div>

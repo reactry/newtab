@@ -1,6 +1,7 @@
 import TopTabBar from './TopTabBar';
 import Tab from './Tab';
 import Preferences from './Preferences';
+import TrashBin from './TrashBin';
 
 import React from 'react';
 
@@ -14,6 +15,7 @@ export default function Main ({
 }) {
 
 	let [showTopTabBar, setShowTopTabBar] = React.useState(true);
+	let [showTrashBin, setShowTrashBin] = React.useState(true);
 
 	let topTabBarProps = {
 		tabData, currentTabIndex, setCurrentTabIndex, showTopTabBar
@@ -22,7 +24,12 @@ export default function Main ({
 	let preferencesProps = {
 		showHeader, setShowHeader,
 		showFooter, setShowFooter,
+		showTrashBin, setShowTrashBin,
 		showTopTabBar, setShowTopTabBar
+	};
+
+	let trashBinProps = {
+		showTrashBin
 	};
 
 	return (
@@ -30,6 +37,7 @@ export default function Main ({
 			<TopTabBar {...topTabBarProps} />
 			<Tab {...tabData[currentTabIndex]} />
 			<Preferences {...preferencesProps} />
+			<TrashBin {...trashBinProps} />
 		</div>
 	);
 }
