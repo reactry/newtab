@@ -2,8 +2,10 @@
 
 
 export default function TopTabBar ({
-	tabData, currentTabIndex, setCurrentTabIndex
+	tabData, currentTabIndex, setCurrentTabIndex, showTopTabBar
 }) {
+
+	if (!showTopTabBar) return null;
 
 	let tabBarItems = tabData.map((v, i) => {
 		let itemClass = "basis-full";
