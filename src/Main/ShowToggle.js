@@ -9,12 +9,14 @@ export default function ShowToggle ({
 	circleClass += show ? " bg-green-600 translate-x-7" : " bg-gray-600";
 
 	return (
-		<div className="ShowToggle px-2 py-2">
-			<h2 className="text-sm font-bold">{title}</h2>
-			<div className="px-2 py-3">
-				<div className="bg-gray-400 w-12 h-3 rounded-full cursor-pointer" onClick={(e) => setShow(!show)}>
+		<div className="ShowToggle px-2 py-2 flex">
+			<div className="px-2 py-3 cursor-pointer rounded-md duration-300 hover:bg-gray-200" onClick={(e) => setShow(!show)}>
+				<div className="bg-gray-400 w-12 h-3 rounded-full">
 					<div className={circleClass}></div>
 				</div>
+			</div>
+			<div className="px-2 py-2">
+				<h2 className="text-sm font-bold">{title}</h2>
 			</div>
 		</div>
 	);
