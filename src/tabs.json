@@ -1,6 +1,23 @@
 {
 	"tabs": [
 		{
+			"title": "Docs",
+			"shortcuts": [
+				{
+					"title": "Angular",
+					"href": "https://angular.io/"
+				},
+				{
+					"title": "React",
+					"href": "https://reactjs.org/"
+				},
+				{
+					"title": "Vue",
+					"href": "https://vuejs.org/"
+				}
+			]
+		},
+		{
 			"title": "Social",
 			"shortcuts": [
 				{
@@ -56,23 +73,6 @@
 				{
 					"title": "Economist",
 					"href": "https://www.economist.com"
-				}
-			]
-		},
-		{
-			"title": "Docs",
-			"shortcuts": [
-				{
-					"title": "Angular",
-					"href": "https://angular.io/"
-				},
-				{
-					"title": "React",
-					"href": "https://reactjs.org/"
-				},
-				{
-					"title": "Vue",
-					"href": "https://vuejs.org/"
 				}
 			]
 		}
