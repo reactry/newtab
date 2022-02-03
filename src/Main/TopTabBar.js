@@ -13,7 +13,10 @@ export default function TopTabBar ({
 		return (
 			<div key={i} className={itemClass}
 				onClick={() => setCurrentTabIndex(i)}>
-				<h3 className="text-md text-center font-bold px-3 pt-3 pb-2">{v.title}</h3>
+				<h3 className="text-md text-center font-bold px-3 pt-4 pb-3">
+					<span>{v.title}</span>
+					<span className="ml-2 bg-gray-500 px-2 py-1 text-white text-sm rounded-full">{v.shortcuts.length}</span>
+				</h3>
 			</div>
 		);
 	});
