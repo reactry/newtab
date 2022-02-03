@@ -6,7 +6,8 @@ export default function Preferences ({
 	showHeader, setShowHeader,
 	showFooter, setShowFooter,
 	showTrashBin, setShowTrashBin,
-	showTopTabBar, setShowTopTabBar
+	showTopTabBar, setShowTopTabBar,
+	showShortcutCount, setShowShortcutCount
 }) {
 	return (
 		<div className="Preferences">
@@ -18,6 +19,9 @@ export default function Preferences ({
 					<ShowToggle title="Tabs"
 						show={showTopTabBar}
 						setShow={setShowTopTabBar} />
+					<ShowToggle title="Count"
+						show={showShortcutCount}
+						setShow={setShowShortcutCount} />
 					<ShowToggle title="Trash"
 						show={showTrashBin}
 						setShow={setShowTrashBin} />

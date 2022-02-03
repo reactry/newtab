@@ -2,7 +2,8 @@
 
 
 export default function TopTabBar ({
-	tabData, currentTabIndex, setCurrentTabIndex, showTopTabBar
+	tabData, currentTabIndex, setCurrentTabIndex,
+	showTopTabBar, showShortcutCount
 }) {
 
 	if (!showTopTabBar) return null;
@@ -15,7 +16,7 @@ export default function TopTabBar ({
 				onClick={() => setCurrentTabIndex(i)}>
 				<h3 className="text-md text-center font-bold px-3 pt-4 pb-3">
 					<span>{v.title}</span>
-					<span className="ml-2 bg-gray-500 px-2 py-1 text-white text-sm rounded-full">{v.shortcuts.length}</span>
+					{showShortcutCount && <span className="ml-2 bg-gray-500 px-2 py-1 text-white text-sm rounded-full">{v.shortcuts.length}</span>}
 				</h3>
 			</div>
 		);

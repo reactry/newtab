@@ -16,16 +16,19 @@ export default function Main ({
 
 	let [showTopTabBar, setShowTopTabBar] = React.useState(true);
 	let [showTrashBin, setShowTrashBin] = React.useState(true);
+	let [showShortcutCount, setShowShortcutCount] = React.useState(true);
 
 	let topTabBarProps = {
-		tabData, currentTabIndex, setCurrentTabIndex, showTopTabBar
+		tabData, currentTabIndex, setCurrentTabIndex,
+		showTopTabBar, showShortcutCount
 	};
 
 	let preferencesProps = {
 		showHeader, setShowHeader,
 		showFooter, setShowFooter,
 		showTrashBin, setShowTrashBin,
-		showTopTabBar, setShowTopTabBar
+		showTopTabBar, setShowTopTabBar,
+		showShortcutCount, setShowShortcutCount
 	};
 
 	let trashBinProps = {
