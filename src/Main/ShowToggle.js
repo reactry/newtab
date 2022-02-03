@@ -10,6 +10,7 @@ export default function ShowToggle ({
 
 	function handleKeyPress (e) {
 		if (e.keyCode === 32) {
+			e.preventDefault();
 			setShow(!show);
 		}
 	}
