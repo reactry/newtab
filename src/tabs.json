@@ -1,0 +1,80 @@
+{
+	"tabs": [
+		{
+			"title": "Social",
+			"shortcuts": [
+				{
+					"title": "Reddit",
+					"href": "https://www.reddit.com"
+				},
+				{
+					"title": "Facebook",
+					"href": "https://www.facebook.com"
+				},
+				{
+					"title": "Twitter",
+					"href": "https://www.twitter.com"
+				},
+				{
+					"title": "Instagram",
+					"href": "https://www.instagram.com"
+				},
+				{
+					"title": "YouTube",
+					"href": "https://www.youtube.com"
+				}
+			]
+		},
+		{
+			"title": "Search",
+			"shortcuts": [
+				{
+					"title": "Google",
+					"href": "https://www.google.com"
+				},
+				{
+					"title": "Bing",
+					"href": "https://www.bing.com"
+				},
+				{
+					"title": "DuckDuckGo",
+					"href": "https://www.duckduckgo.com"
+				}
+			]
+		},
+		{
+			"title": "Newspaper",
+			"shortcuts": [
+				{
+					"title": "NYT",
+					"href": "https://www.nytimes.com"
+				},
+				{
+					"title": "WSJ",
+					"href": "https://www.wsj.com"
+				},
+				{
+					"title": "Economist",
+					"href": "https://www.economist.com"
+				}
+			]
+		},
+		{
+			"title": "Docs",
+			"shortcuts": [
+				{
+					"title": "Angular",
+					"href": "https://angular.io/"
+				},
+				{
+					"title": "React",
+					"href": "https://reactjs.org/"
+				},
+				{
+					"title": "Vue",
+					"href": "https://vuejs.org/"
+				}
+			]
+		}
+	]
+}
