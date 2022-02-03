@@ -20,7 +20,7 @@ export default function ShortcutMenu ({
 	}
 
 	return (
-		<div className="ShortcutMenu px-4 py-3 bg-slate-200 -ml-1 border-2 space-y-2 text-blue-800 border-blue-800">
+		<div className="ShortcutMenu px-3 py-3 bg-slate-200 -ml-1 border-2 space-y-2 text-blue-800 border-blue-800">
 			<div className={buttonClass} onClick={copyHref}>Copy</div>
 			<div className={buttonClass} onClick={editShortcut}>Edit</div>
 			<div className={buttonClass} onClick={closeMenu}>Close</div>
