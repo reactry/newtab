@@ -1,16 +1,21 @@
 import ShowToggle from './ShowToggle';
+import Tab from './Tab';
 
 
 
 export default function Main ({
 	showHeader, setShowHeader,
 	showFooter, setShowFooter,
-	tabs, setTabs
+	tabData, setTabData
 }) {
+
+	let tabItems = tabData.map((v, i) => {
+		return <Tab key={i} {...v} />;
+	});
 
 	return (
 		<div className="Main min-h-screen bg-slate-300 p-4">
-			<h1 className="text-2xl">Main</h1>
+			{tabItems}
 			<ShowToggle title="Header"
 				show={showHeader}
 				setShow={setShowHeader} />

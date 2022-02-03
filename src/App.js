@@ -6,8 +6,18 @@ import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
 
+import tabsjson from './tabs.json';
+
+
+
 function App () {
-	let [tabs, setTabs] = React.useState([]);
+	const tabs = tabsjson.tabs;
+
+	let [tabData, setTabData] = React.useState([]);
+	React.useEffect(() => {
+		setTabData(tabs);
+		console.log("I was set!")
+	}, []);
 
 	let [showHeader, setShowHeader] = React.useState(true);
 	let [showFooter, setShowFooter] = React.useState(true);
@@ -15,7 +25,7 @@ function App () {
 	let props = {
 		showHeader, setShowHeader,
 		showFooter, setShowFooter,
-		tabs, setTabs
+		tabData, setTabData
 	};
 
 	return (
