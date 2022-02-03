@@ -16,11 +16,10 @@ function App () {
 	let [tabData, setTabData] = React.useState([]);
 	React.useEffect(() => {
 		setTabData(tabs);
-		console.log("I was set!")
 	}, []);
 
-	let [showHeader, setShowHeader] = React.useState(true);
-	let [showFooter, setShowFooter] = React.useState(true);
+	let [showHeader, setShowHeader] = React.useState(false);
+	let [showFooter, setShowFooter] = React.useState(false);
 
 	let props = {
 		showHeader, setShowHeader,
