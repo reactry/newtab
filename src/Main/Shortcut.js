@@ -24,7 +24,7 @@ export default function Shortcut ({
 				{showBigLetter && <div className="text-4xl py-4 bg-slate-300 mb-2">{firstLetter}</div>}
 				<div className="font-bold text-sm">{title}</div>
 			</a>
-			{showMenu && <ShortcutMenu {...{href}} />}
+			{showMenu && <ShortcutMenu {...{href, setShowMenu}} />}
 		</div>
 	);
 }
