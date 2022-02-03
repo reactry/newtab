@@ -19,10 +19,16 @@ export default function Main ({
 	let [showPreferences, setShowPreferences] = React.useState(true);
 	let [showTrashBin, setShowTrashBin] = React.useState(true);
 	let [showShortcutCount, setShowShortcutCount] = React.useState(true);
+	let [showBigLetter, setShowBigLetter] = React.useState(true);
 
 	let topTabBarProps = {
 		tabData, currentTabIndex, setCurrentTabIndex,
 		showTopTabBar, showShortcutCount
+	};
+
+	let tabProps = {
+		...tabData[currentTabIndex],
+		showBigLetter
 	};
 
 	let preferencesProps = {
@@ -30,7 +36,8 @@ export default function Main ({
 		showFooter, setShowFooter,
 		showTrashBin, setShowTrashBin,
 		showTopTabBar, setShowTopTabBar,
-		showShortcutCount, setShowShortcutCount
+		showShortcutCount, setShowShortcutCount,
+		showBigLetter, setShowBigLetter
 	};
 
 	let trashBinProps = {
@@ -38,9 +45,9 @@ export default function Main ({
 	};
 
 	return (
-		<div className="Main min-h-screen bg-slate-300">
+		<div className="Main min-h-screen bg-slate-300 pb-32">
 			<TopTabBar {...topTabBarProps} />
-			<Tab {...tabData[currentTabIndex]} />
+			<Tab {...tabProps} />
 			<div>
 				<div className="max-w-lg mx-auto py-4 px-4">
 					<ShowToggle title="Preferences"

@@ -3,13 +3,14 @@ import Shortcut from './Shortcut';
 
 
 export default function Tab ({
-	title, shortcuts
+	title, shortcuts, showBigLetter
 }) {
 
 	if (!shortcuts) return null;
 
 	let shortcutItems = shortcuts.map((v, i) => {
-		return <Shortcut key={i} {...v} />
+		let props = {...v, showBigLetter};
+		return <Shortcut key={i} {...props} />
 	});
 
 	return (
