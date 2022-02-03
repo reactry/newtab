@@ -18,27 +18,19 @@
 			]
 		},
 		{
-			"title": "Social",
+			"title": "Newspaper",
 			"shortcuts": [
 				{
-					"title": "Reddit",
-					"href": "https://www.reddit.com"
+					"title": "NYT",
+					"href": "https://www.nytimes.com"
 				},
 				{
-					"title": "Facebook",
-					"href": "https://www.facebook.com"
+					"title": "WSJ",
+					"href": "https://www.wsj.com"
 				},
 				{
-					"title": "Twitter",
-					"href": "https://www.twitter.com"
-				},
-				{
-					"title": "Instagram",
-					"href": "https://www.instagram.com"
-				},
-				{
-					"title": "YouTube",
-					"href": "https://www.youtube.com"
+					"title": "Economist",
+					"href": "https://www.economist.com"
 				}
 			]
 		},
@@ -60,19 +52,27 @@
 			]
 		},
 		{
-			"title": "Newspaper",
+			"title": "Social",
 			"shortcuts": [
 				{
-					"title": "NYT",
-					"href": "https://www.nytimes.com"
+					"title": "Reddit",
+					"href": "https://www.reddit.com"
 				},
 				{
-					"title": "WSJ",
-					"href": "https://www.wsj.com"
+					"title": "Facebook",
+					"href": "https://www.facebook.com"
 				},
 				{
-					"title": "Economist",
-					"href": "https://www.economist.com"
+					"title": "Twitter",
+					"href": "https://www.twitter.com"
+				},
+				{
+					"title": "Instagram",
+					"href": "https://www.instagram.com"
+				},
+				{
+					"title": "YouTube",
+					"href": "https://www.youtube.com"
 				}
 			]
 		}
