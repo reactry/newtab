@@ -1,6 +1,6 @@
-import ShowToggle from './ShowToggle';
 import TopTabBar from './TopTabBar';
 import Tab from './Tab';
+import Preferences from './Preferences';
 
 import React from 'react';
 
@@ -19,21 +19,17 @@ export default function Main ({
 		tabData, currentTabIndex, setCurrentTabIndex, showTopTabBar
 	};
 
+	let preferencesProps = {
+		showHeader, setShowHeader,
+		showFooter, setShowFooter,
+		showTopTabBar, setShowTopTabBar
+	};
+
 	return (
 		<div className="Main min-h-screen bg-slate-300">
 			<TopTabBar {...topTabBarProps} />
 			<Tab {...tabData[currentTabIndex]} />
-			<div>
-				<ShowToggle title="Header"
-					show={showHeader}
-					setShow={setShowHeader} />
-				<ShowToggle title="Tabs"
-					show={showTopTabBar}
-					setShow={setShowTopTabBar} />
-				<ShowToggle title="Footer"
-					show={showFooter}
-					setShow={setShowFooter} />
-			</div>
+			<Preferences {...preferencesProps} />
 		</div>
 	);
 }
