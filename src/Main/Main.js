@@ -11,10 +11,6 @@ export default function Main ({
 	currentTabIndex, setCurrentTabIndex
 }) {
 
-	let tabItems = tabData.map((v, i) => {
-		return <Tab key={i} {...v} />;
-	});
-
 	let topTabBarProps = {
 		tabData, currentTabIndex, setCurrentTabIndex
 	};
@@ -22,7 +18,7 @@ export default function Main ({
 	return (
 		<div className="Main min-h-screen bg-slate-300">
 			<TopTabBar {...topTabBarProps} />
-			{tabItems}
+			<Tab {...tabData[currentTabIndex]} />
 			<ShowToggle title="Header"
 				show={showHeader}
 				setShow={setShowHeader} />

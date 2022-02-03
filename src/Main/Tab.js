@@ -6,6 +6,8 @@ export default function Tab ({
 	title, shortcuts
 }) {
 
+	if (!shortcuts) return null;
+
 	let shortcutItems = shortcuts.map((v, i) => {
 		return <Shortcut key={i} {...v} />
 	});
